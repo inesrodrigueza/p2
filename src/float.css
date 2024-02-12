@@ -16,15 +16,17 @@ table {
     background: #eee;
   }
 
-  .right{
-    float: right;
-    text-align: right;
-    width: -50%;
-    height: -50%;
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #h1{
+    float:left;
 }
-.left{
-    float: left;
-    text-align: right;
-    width: -50%;
-    height: -50%;
+
+#suscribete{
+    float:right;
 }
