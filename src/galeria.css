@@ -1,0 +1,80 @@
+/*Menu*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background: dodgerblue;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .menu li {
+      flex: 4 1 0;
+    }
+  
+  .menu a {
+      font: 9px sans-serif;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      padding: 9px;
+      color: white;
+      user-select: none;
+    }
+  
+  .menu li:hover {
+      background: royalblue;
+  }
+  
+  .submenu {
+      display: none;
+      list-style: none;
+      padding: 0;
+      background: dodgerblue;
+      position: absolute;
+    }
+  
+  .submenu > li:hover {
+      background: royalblue;
+  }
+  
+  .menu > li:hover > .submenu {
+      display: block;
+  }
+
+
+/*Fotos*/
+.container-fotos h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.galeria-fotos {
+    padding: 35px;
+}
+
+.galeria-fotos .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+/*Videos*/
+.container-videos h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.galeria-videos {
+  padding: 35px;
+}
+
+.galeria-videos {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  display: block;
+}
