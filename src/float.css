@@ -22,11 +22,3 @@ table {
     display: flex;
     align-items: center;
   }
-
-  #h1{
-    float:left;
-}
-
-#suscribete{
-    float:right;
-}
