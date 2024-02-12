@@ -6,6 +6,86 @@
   <link rel="stylesheet" href="float.css">
 </head>
   <body>
-    <h1>Formulario de inscripcion</h1>
+    <a href="index.html">&lt; Cancelar</a><br>
+    <form method="post">
+        <h2>Formulario de inscripción</h2>
+        <fieldset>
+         <legend>Datos personales</legend>
+         <p>
+          <label for="name">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" maxlenght= "470" size="20" required></input>
+         </p>
+         <p>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" maxlenght= "470" size="20" required></input>
+        </p>
+        <p>
+            <label for="fecha">Fecha de nacimiento:</label><br>
+             <input type="date" if="fecha" name="fecha" required>
+        </p>
+        <p>
+            <label for="sexo">Sexo:</label><br>
+             <select name= "sexo" id="sexo" requiered>
+               <option>Hombre</option>
+               <option>Mujer</option>
+               <option>Otro</option>
+             </select>
+        </p>
+        <p>
+            <label for="edad">Edad:</label><br>
+            <p id="selector">*Debes ser mayor de 18 años</p>
+             <input type ="number" id="edad" name="edad" min="18" size="40" required>
+        </p>
+         <p>
+          <label for="email">Email:</label><br>
+           <input type="text" id="email" name="email" maxlenght= "470" size="20" requiered></input>
+         </p>
+         <p>
+            <label for="telefono">Teléfono:</label><br>
+             <input type="text" id="telefono" name="telefono" maxlenght= "470" size="20" required></input>
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos médicos</legend>
+            <p>
+                <label for="enfermedades">Padeces alguna enfermedad:</label><br>
+                 <input type="text" id="enfermedades" name="enfermedades" maxlenght= "500" size="25"></input>
+            </p>
+            <p>
+                <label for="medicacion">Tomas actualmente algún medicamento:</label><br>
+                 <input type="text" id="medicacion" name="medicacion" maxlenght= "500" size="25"></input>
+            </p>
+            <p>
+                <label for="alergias">Eres alérgico a algún medicamento:</label><br>
+                 <input type="text" id="alergias" name="alergias" maxlenght= "500" size="25"></input>
+            </p>
+           </fieldset>
+
+        <fieldset>
+         <legend>Comentarios</legend>
+         <p>¿Has viajado antes en globo aerostático?
+            <ul>
+             <li> 
+               <input type="radio" id="si" name ="viajar" value="Sí" required>
+              <label for="si">Sí</label>
+             </li>
+             <li>
+               <input type="radio" id="no" name ="viajar" value="No" required>
+              <label for="no">No</label>
+             </li>
+            </ul>
+           </p>
+         <p>
+          <label for="comentario">¿Tienes algún comentario adicional?</label><br>
+           <textarea id="comentario" name="comentario" rows="10" cols="65"></textarea>
+         </p>
+        </fieldset>
+
+        <fieldset>
+          <button id="submit" onclick="location.href='index.html'">Submit</button>
+          <button id="reset" onclick="location.href='formulario.html'">Reset</button>
+        </fieldset>
+       </form>
   </body>
 </html> 
