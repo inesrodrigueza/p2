@@ -1,46 +1,48 @@
 /*Menu*/
 .menu {
-    display: flex;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  background:#485388;
+  padding: 0;
+  justify-content: center;
+  height: 35px;
+}
+
+.menu li {
+    flex: 4 1 0;
+  }
+
+.menu a {
+    font: 9px sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 9px;
+    color: white;
+    user-select: none;
+    font-size: 16px;
+  }
+
+.menu li:hover {
+    background: rgb(58, 89, 181);
+}
+
+.submenu {
+    display: none;
     list-style: none;
-    margin: 0;
-    background: dodgerblue;
     padding: 0;
-    justify-content: center;
+    background: rgb(58, 89, 181);
+    position: absolute;
   }
-  
-  .menu li {
-      flex: 4 1 0;
-    }
-  
-  .menu a {
-      font: 9px sans-serif;
-      text-align: center;
-      text-decoration: none;
-      display: block;
-      padding: 9px;
-      color: white;
-      user-select: none;
-    }
-  
-  .menu li:hover {
-      background: royalblue;
-  }
-  
-  .submenu {
-      display: none;
-      list-style: none;
-      padding: 0;
-      background: dodgerblue;
-      position: absolute;
-    }
-  
-  .submenu > li:hover {
-      background: royalblue;
-  }
-  
-  .menu > li:hover > .submenu {
-      display: block;
-  }
+
+.submenu > li:hover {
+    background: rgb(70, 104, 206);
+}
+
+.menu > li:hover > .submenu {
+    display: block;
+}
 
 
 /*Fotos*/
