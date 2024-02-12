@@ -15,3 +15,16 @@ table {
   tr:nth-child(2n+1) > td {
     background: #eee;
   }
+
+  .right{
+    float: right;
+    text-align: right;
+    width: -50%;
+    height: -50%;
+}
+.left{
+    float: left;
+    text-align: right;
+    width: -50%;
+    height: -50%;
+}
