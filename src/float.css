@@ -10,7 +10,8 @@
   display: flex;
   list-style: none;
   margin: 0;
-  background: dodgerblue;
+  background:#485388;
+  /*background: dodgerblue;*/
   padding: 0;
   justify-content: center;
 }
@@ -30,19 +31,19 @@
   }
 
 .menu li:hover {
-    background: royalblue;
+    background: rgb(58, 89, 181);
 }
 
 .submenu {
     display: none;
     list-style: none;
     padding: 0;
-    background: dodgerblue;
+    background: rgb(58, 89, 181);
     position: absolute;
   }
 
 .submenu > li:hover {
-    background: royalblue;
+    background: rgb(70, 104, 206);
 }
 
 .menu > li:hover > .submenu {
@@ -80,5 +81,16 @@ table {
 }
 
 .edad{
-  width: 50px;
+  width: 40px;
 } 
+
+/*Footer*/
+.footer{
+  background: #485388;;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.footer p{
+  color: white;
+}
